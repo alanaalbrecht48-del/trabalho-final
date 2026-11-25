@@ -1,0 +1,179 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doce Encanto Confeitaria TGA</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Cabeçalho -->
+    <header>
+        <h1>Doce Encanto Confeitaria TGA</h1>
+        <p>Doces feitos com amor!</p>
+    </header>
+
+    <!-- Menu -->
+    <nav>
+        <a href="#inicio">Início</a>
+        <a href="#sobre">Sobre nós</a>
+        <a href="#produtos">Produtos</a>
+        <a href="#contato">Contato</a>
+    </nav>
+
+    <!-- Início -->
+    <section id="inicio">
+        <h2>Bem-vindo à nossa confeitaria!</h2>
+        <p>Aqui você encontra deliciosos bolos e doces
+        preparados com muito carinho.</p>
+        <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=600"
+        alt="Bolo de chocolate">
+    </section>
+
+    <!-- Sobre -->
+    <section id="sobre">
+        <h2>Sobre nós</h2>
+        <p>A Doce Encanto TGA é uma confeitaria especializada
+        em bolos e doces artesanais.</p>
+        <p>Nosso objetivo é levar sabor e felicidade
+        para todos os momentos especiais.</p>
+    </section>
+
+    <!-- Produtos -->
+    <section id="produtos">
+        <h2>Nossos Produtos</h2>
+
+        <div class="produto">
+            <img src="https://images.unsplash.com/photo-1565958011703-44f9829ba187?w=400"
+            alt="Bolo de morango">
+            <h3>Bolo de Morango</h3>
+            <p>R$ 55,00</p>
+            <button onclick="comprar('Bolo de Morango')">
+                Comprar
+            </button>
+        </div>
+
+        <div class="produto">
+            <img src="https://images.unsplash.com/photo-1486427944299-d1955d23e34d?w=400"
+            alt="Cupcake">
+            <h3>Cupcake</h3>
+            <p>R$ 9,00</p>
+            <button onclick="comprar('Cupcake')">
+                Comprar
+            </button>
+        </div>
+
+        <div class="produto">
+            <img src="https://images.unsplash.com/photo-1581798459219-318e76aecc7b?w=400"
+            alt="Brigadeiros">
+            <h3>Brigadeiros</h3>
+            <p>R$ 15,00</p>
+            <button onclick="comprar('Brigadeiros')">
+                Comprar
+            </button>
+        </div>
+    </section>
+
+
+<section id="encomenda">
+    <h2>Faça sua encomenda</h2>
+
+    <form onsubmit="enviarPedido(event)">
+
+        <label>Seu nome:</label>
+        <input type="text" id="nome" required>
+
+        <label>Seu telefone:</label>
+        <input type="tel" id="telefone" required>
+
+        <label>Escolha seu doce:</label>
+        <select id="doce">
+            <option>Bolo de Morango</option>
+            <option>Bolo de Chocolate</option>
+            <option>Brigadeiros</option>
+            <option>Cupcakes</option>
+            <option>Macarons</option>
+        </select>
+
+        <label>Observações:</label>
+        <textarea id="observacao"></textarea>
+
+        <button type="submit">Enviar encomenda</button>
+
+    </form>
+</section>
+
+    <!-- Contato -->
+    <section id="contato">
+        <h2>Entre em contato</h2>
+        <p>Telefone: (00) 00000-0000</p>
+        <p>Email: doceencantotga@email.com</p>
+    </section>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>Doce Encanto Confeitaria</p>
+        <p>Todos os direitos reservados - 2026</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Doce Encanto</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Doce Encanto Confeitaria</h1>
+        <p>Bem-vindo de volta!</p>
+    </header>
+
+    <section class="login">
+
+        <h2>Entrar na sua conta ♡</h2>
+
+        <form onsubmit="fazerLogin(event)">
+
+            <label>Email:</label>
+            <input type="email" id="email"
+            placeholder="Digite seu email" required>
+
+            <label>Senha:</label>
+            <input type="password" id="senha"
+            placeholder="Digite sua senha" required>
+
+            <button type="submit">Entrar</button>
+
+        </form>
+
+        <p>Ainda não tem uma conta?</p>
+
+        <a href="cadastro.html">Cadastre-se</a>
+
+        <br><br>
+
+        <a href="index.html">Voltar para a página inicial</a>
+
+    </section>
+
+    <footer>
+        <p>Doce Encanto Confeitaria</p>
+        <p>Todos os direitos reservados - 2026</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,120 @@
+
+/* Configuração geral */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #fff0f3;
+    color: #5c353d;
+    text-align: center;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #e9aeb9;
+    padding: 30px;
+    color: white;
+}
+
+/* Menu */
+nav {
+    background-color: #b86f7e;
+    padding: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 15px;
+    font-weight: bold;
+}
+
+/* Seções */
+section {
+    padding: 30px;
+    margin: 20px;
+}
+
+/* Imagens */
+img {
+    width: 250px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Produtos */
+.produto {
+    background-color: white;
+    display: inline-block;
+    width: 280px;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+/* Botões */
+button {
+    background-color: #c77d8c;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #a95367;
+}
+
+/* Rodapé */
+footer {
+    background-color: #b86f7e;
+    color: white;
+    padding: 20px;
+}
+
+
+/* Página de Login */
+
+.login {
+    background-color: white;
+    width: 350px;
+    max-width: calc(100% - 70px);
+    margin: 50px auto;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 2px 2px 15px #d8a6ae;
+}
+
+.login h2 {
+    color: #b86f7e;
+    margin-bottom: 25px;
+}
+
+.login input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0 20px;
+    border: 1px solid #e9aeb9;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.login label {
+    display: block;
+    text-align: left;
+}
+
+.login button {
+    width: 100%;
+    margin-top: 10px;
+}
+
+.login a {
+    color: #b86f7e;
+    text-decoration: none;
+}
+
+.login a:hover {
+    text-decoration: underline;
+}
